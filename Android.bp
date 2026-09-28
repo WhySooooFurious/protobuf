@@ -165,6 +165,28 @@ cc_library {
     ],
     min_sdk_version: "29",
 }
+cc_library {
+    name: "libprotobuf-cpp-lite-21.7",
+    host_supported: true,
+    ramdisk_available: true,
+    recovery_available: true,
+    vendor_available: true,
+    vendor_ramdisk_available: true,
+    product_available: true,
+    double_loadable: true,
+    defaults: ["libprotobuf-cpp-lite-defaults"],
+
+    target: {
+        windows: {
+            enabled: true,
+        },
+    },
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
+    min_sdk_version: "29",
+}
 
 // C++ full library
 // =======================================================
