@@ -299,6 +299,39 @@ cc_library {
     min_sdk_version: "29",
 }
 
+cc_library {
+    name: "libprotobuf-cpp-full-21.7",
+    host_supported: true,
+    recovery_available: true,
+    vendor_available: true,
+    product_available: true,
+    double_loadable: true,
+    defaults: ["libprotobuf-cpp-full-defaults"],
+
+    target: {
+        android: {
+            static: {
+                enabled: false,
+            },
+        },
+        windows: {
+            enabled: true,
+        },
+        vendor: {
+            suffix: "",
+        },
+        product: {
+            suffix: "",
+        },
+    },
+    apex_available: [
+        "//apex_available:platform",
+        "com.android.appsearch",
+        "com.android.virt",
+    ],
+    min_sdk_version: "29",
+}
+
 cc_test_library {
     name: "libprotobuf-cpp-full-test",
     defaults: ["libprotobuf-cpp-full-defaults"],
