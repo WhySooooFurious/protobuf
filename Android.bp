@@ -180,6 +180,12 @@ cc_library {
         windows: {
             enabled: true,
         },
+        vendor: {
+            suffix: "",
+        },
+        product: {
+            suffix: "",
+        },
     },
     apex_available: [
         "//apex_available:platform",
