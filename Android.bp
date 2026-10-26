@@ -372,7 +372,7 @@ cc_library {
     ],
     min_sdk_version: "29",
     visibility: [
-        "//vendor/__subpackages__",
+        "//vendor:__subpackages__",
     ],
 
 }
@@ -514,7 +514,7 @@ cc_library {
     ],
     min_sdk_version: "29",
     visibility: [
-        "//vendor/__subpackages__",
+        "//vendor:__subpackages__",
     ],
 
 }
