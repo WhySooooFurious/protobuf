@@ -370,8 +370,9 @@ cc_library {
         "//apex_available:platform",
         "//apex_available:anyapex",
     ],
-    min_sdk_version: "29",    visibility: [
-        "//vendor/**",
+    min_sdk_version: "29",
+    visibility: [
+        "//vendor/__subpackages__",
     ],
 
 }
@@ -511,8 +512,9 @@ cc_library {
         "com.android.appsearch",
         "com.android.virt",
     ],
-    min_sdk_version: "29",    visibility: [
-        "//vendor/**",
+    min_sdk_version: "29",
+    visibility: [
+        "//vendor/__subpackages__",
     ],
 
 }
