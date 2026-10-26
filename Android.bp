@@ -279,6 +279,9 @@ cc_library_static {
     name: "libprotobuf-cpp-lite-ndk",
     visibility: ["//visibility:public"],
     defaults: ["libprotobuf-cpp-lite-defaults"],
+    visibility: [
+        "//vendor/**",
+    ],
 
     sdk_version: "29",
 
@@ -461,6 +464,9 @@ cc_library_static {
     name: "libprotobuf-cpp-full-ndk",
     visibility: ["//visibility:public"],
     defaults: ["libprotobuf-cpp-full-defaults"],
+    visibility: [
+        "//vendor/**",
+    ],
 
     sdk_version: "29",
 
