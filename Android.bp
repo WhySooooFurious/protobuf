@@ -373,7 +373,10 @@ cc_library {
         "//apex_available:platform",
         "//apex_available:anyapex",
     ],
-    min_sdk_version: "29",
+    min_sdk_version: "29",    visibility: [
+        "//vendor/**",
+    ],
+
 }
 
 // C++ full library
@@ -514,7 +517,10 @@ cc_library {
         "com.android.appsearch",
         "com.android.virt",
     ],
-    min_sdk_version: "29",
+    min_sdk_version: "29",    visibility: [
+        "//vendor/**",
+    ],
+
 }
 
 cc_test_library {
